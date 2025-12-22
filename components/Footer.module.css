@@ -1,0 +1,44 @@
+.footer {
+  background: #111827;
+  color: #f3f4f6;
+  padding: 3rem 1.5rem;
+  margin-top: 4rem;
+}
+
+.columns {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.columns h4 {
+  margin-top: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: rgba(243, 244, 246, 0.85);
+}
+
+.columns p,
+.columns li {
+  color: rgba(209, 213, 219, 0.85);
+  font-size: 0.95rem;
+  margin: 0.35rem 0;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns a {
+  color: inherit;
+}
+
+.copy {
+  text-align: center;
+  color: rgba(156, 163, 175, 0.85);
+  font-size: 0.85rem;
+}
