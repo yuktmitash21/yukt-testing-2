@@ -1,0 +1,206 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 40;
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(420px, 100%);
+  background: #ffffff;
+  box-shadow: -10px 0 40px rgba(15, 23, 42, 0.12);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 1.6rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.closeButton {
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.empty {
+  padding: 2rem 1.6rem;
+  color: #4b5563;
+  flex: 1;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 1.2rem 1.6rem;
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.listItem {
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.itemHeader h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.brand {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.itemDetails {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.itemDetails input {
+  width: 4.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.removeButton {
+  border: none;
+  background: none;
+  color: #ef4444;
+  font-size: 0.85rem;
+}
+
+.stockNote {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.clearButton {
+  border: none;
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  padding: 0.75rem;
+  margin: 0 1.6rem 1rem;
+  border-radius: 10px;
+}
+
+.couponSection {
+  padding: 0 1.6rem 1.2rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.couponForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.couponForm input {
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  padding: 0.55rem 0.7rem;
+}
+
+.couponForm button {
+  border: none;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.removeCouponButton {
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #b91c1c;
+}
+
+.feedback {
+  margin: 0.6rem 0 0;
+  font-size: 0.85rem;
+}
+
+.feedbackPositive {
+  color: #059669;
+}
+
+.feedbackNegative {
+  color: #dc2626;
+}
+
+.couponHints {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.couponHints ul {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0 0;
+}
+
+.totals {
+  margin-top: auto;
+  padding: 1.4rem 1.6rem 2rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.totalRowEmphasis {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+}

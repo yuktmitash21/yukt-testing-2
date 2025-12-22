@@ -1,0 +1,69 @@
+.filters {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: end;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.field select,
+.field input {
+  border-radius: 10px;
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  padding: 0.6rem 0.75rem;
+  background: rgba(249, 250, 251, 0.85);
+}
+
+.fieldCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(249, 250, 251, 0.85);
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+.fieldCheckbox input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.priceInputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priceDivider {
+  color: #6b7280;
+}
+
+.resetButton {
+  border: none;
+  background: rgba(79, 70, 229, 0.12);
+  color: #4f46e5;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.resetButton:hover {
+  background: rgba(79, 70, 229, 0.2);
+}
