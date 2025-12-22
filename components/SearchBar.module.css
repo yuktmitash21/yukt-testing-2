@@ -1,0 +1,22 @@
+.searchBar {
+  background: #ffffff;
+  padding: 1.1rem 1.25rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07);
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.input {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  background: rgba(249, 250, 251, 0.9);
+}
